@@ -3,7 +3,6 @@ import logging
 import os
 
 ENVIRONMENT = os.getenv("ENVIRONMENT", "development")
-#logging.basicConfig(filename='app.log', level=logging.INFO)
 
 if ENVIRONMENT == "testing":
     DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./test.db")
