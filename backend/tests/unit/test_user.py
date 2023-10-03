@@ -1,7 +1,6 @@
 # tests / unit / test_user.py
-import logging
 import pytest
-from app.models.user import User
+from backend.app.models.user import User
 
 @pytest.fixture(scope="module")
 def user_data():

@@ -4,11 +4,11 @@ import sys
 import subprocess
 
 def run():
-    subprocess.run(["uvicorn", "app.main:app", "--reload"])
+    subprocess.run(["uvicorn", "backend.app.main:app", "--reload"])
 
 def test():
     os.environ["ENVIRONMENT"] = "testing"
-    subprocess.run(["pytest", "tests/"])  # Explicitly specify the tests directory
+    subprocess.run(["pytest", "backend/tests/"])  # Explicitly specify the tests directory
 
 
 def initdb():

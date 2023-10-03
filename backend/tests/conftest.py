@@ -1,13 +1,12 @@
 #tests / conftest.py
-import logging
 import pytest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from app.database import Base
+from backend.app.database import Base
 import sys
-sys.path.append(r"C:/Users/61435/OneDrive - PHM Technology/Python/BasicApp")
+sys.path.append(r"/")
 
-SQLALCHEMY_TEST_DATABASE_URL = "sqlite:///./test.db"
+SQLALCHEMY_TEST_DATABASE_URL = "sqlite:///./backend/test.db"
 engine = create_engine(SQLALCHEMY_TEST_DATABASE_URL)
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 

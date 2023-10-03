@@ -1,9 +1,7 @@
 # tests / integration / test_api.py
-import logging
 from fastapi.testclient import TestClient
 import pytest
-from app.main import app
-from app.models.user import User
+from backend.app.main import app
 
 client = TestClient(app)
 

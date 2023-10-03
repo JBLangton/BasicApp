@@ -2,9 +2,9 @@
 import logging
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from app.views.user_views import UserBase, User
-from app.models.user import User as DBUser
-from app.database import get_db
+from backend.app.views.user_views import UserBase, User
+from backend.app.models.user import User as DBUser
+from backend.app.database import get_db
 
 router = APIRouter()
 
